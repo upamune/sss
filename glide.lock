@@ -1,0 +1,43 @@
+hash: f995b2ba15fba406c8f5305b8b998972135a789aa1b899d4d958dfe839a6d668
+updated: 2016-05-29T12:06:06.266418527+09:00
+imports:
+- name: github.com/atotto/clipboard
+  version: bb272b845f1112e10117e3e45ce39f690c0001ad
+- name: github.com/aws/aws-sdk-go
+  version: 4852ad3b52efba1b86f1c45d675124c5cbf16031
+  subpackages:
+  - aws
+  - aws/credentials
+  - aws/session
+  - service/s3
+  - aws/awserr
+  - aws/client
+  - aws/corehandlers
+  - aws/defaults
+  - aws/request
+  - private/endpoints
+  - aws/awsutil
+  - aws/client/metadata
+  - private/protocol
+  - private/protocol/restxml
+  - private/signer/v4
+  - private/waiter
+  - aws/credentials/ec2rolecreds
+  - aws/ec2metadata
+  - private/protocol/query
+  - private/protocol/rest
+  - private/protocol/xml/xmlutil
+  - private/protocol/query/queryutil
+- name: github.com/BurntSushi/toml
+  version: f0aeabca5a127c4078abb8c8d64298b147264b55
+- name: github.com/go-ini/ini
+  version: 12f418cc7edc5a618a51407b7ac1f1f512139df3
+- name: github.com/jmespath/go-jmespath
+  version: 0b12d6b521d83fc7f755e7cfc1b1fbdd35a01a74
+- name: github.com/mitchellh/go-homedir
+  version: 981ab348d865cf048eb7d17e78ac7192632d8415
+- name: github.com/skratchdot/open-golang
+  version: 75fb7ed4208cf72d323d7d02fd1a5964a7a9073c
+  subpackages:
+  - open
+devImports: []
