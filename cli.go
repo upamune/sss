@@ -8,6 +8,7 @@ import (
 	"os"
 	"os/exec"
 	"runtime"
+	"strings"
 
 	"github.com/atotto/clipboard"
 	"github.com/mitchellh/go-homedir"
@@ -96,8 +97,8 @@ func screenShot() (*os.File, error) {
 		commands = append(commands, "import")
 	}
 	commands = append(commands, tmpFileName)
-	//args := strings.Join(commands[1:], " ")
-	out, err := exec.Command(commands[0], "-i", tmpFileName).Output()
+	command := strings.Join(commands, " ")
+	out, err := exec.Command(os.Getenv("SHELL"), "-c", command).Output()
 	if err != nil {
 		fmt.Println(string(out))
 		fmt.Println(err)
