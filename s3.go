@@ -41,9 +41,10 @@ func (s *S3) Upload(f *os.File) (string, error) {
 	key := generateKey("png")
 
 	_, err := c.PutObject(&s3.PutObjectInput{
-		Bucket: aws.String(s.AwsS3BucketName),
-		Key:    aws.String(key),
-		Body:   f,
+		Bucket:      aws.String(s.AwsS3BucketName),
+		Key:         aws.String(key),
+		ContentType: aws.String("image/png"),
+		Body:        f,
 	})
 
 	if err != nil {
